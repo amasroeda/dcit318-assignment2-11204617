@@ -12,9 +12,18 @@ namespace AssignmentApp
             PopSong pop = new PopSong();
             RockSong rock = new RockSong();
 
-            genericSong.Play(); 
-            pop.Play();         
-            rock.Play();        
+            genericSong.Play();
+            pop.Play();
+            rock.Play();
+
+            // Task 2
+            Console.WriteLine("\n--- Task 2: Abstract Classes & Methods (Music Formats) ---");
+
+            VinylRecord vinyl = new VinylRecord(40); 
+            CD cd = new CD(60);                     
+
+            Console.WriteLine($"Vinyl storage needed: {vinyl.GetStorageSpace()} MB");
+            Console.WriteLine($"CD storage needed: {cd.GetStorageSpace()} MB");       
         }
     }
 }
